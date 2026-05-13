@@ -22,20 +22,7 @@
 ### Schéma général
 
 ```
-                        [Internet / WAN]
-                               |
-                           [Pare-feu]
-                               |
-                    [Routeur Principal R1]
-                    (Router-on-a-Stick)
-                               |
-                    [Switch Core SW-CORE]
-                    /          |          \
-              [SW-ACC1]    [SW-ACC2]    [SW-ACC3]
-                 |              |             |
-           VLAN 10          VLAN 20        VLAN 30
-        (Direction)     (Informatique)  (Utilisateurs)
-```
+                        CAPTURE PHOTO
 
 
 ### Plan d'adressage IP
