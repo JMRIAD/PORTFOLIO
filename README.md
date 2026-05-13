@@ -1,10 +1,10 @@
-# 🖧 Topologie Réseau — Gestion de Parc Informatique
+#  Topologie Réseau — Gestion de Parc Informatique
 
 > **Contexte** : Ce dépôt présente la configuration d'une topologie réseau d'entreprise avec segmentation VLAN, routage inter-VLAN (Router-on-a-Stick), et une analyse complète de la gestion du parc informatique via GLPI.
 
 ---
 
-## 📋 Table des matières
+##  Table des matières
 
 1. [Présentation de la topologie](#-présentation-de-la-topologie)
 2. [Configuration réseau](#-configuration-réseau)
@@ -36,7 +36,7 @@
 
 ---
 
-## ⚙️ Configuration réseau
+##  Configuration réseau
 
 ### Routeur R1 — Router-on-a-Stick
 
@@ -155,13 +155,13 @@ Tout changement de configuration réseau (ajout d'un VLAN, modification d'ACL) p
 
 #### 4. Limites de GLPI dans ce contexte
 
-- ❌ GLPI ne supervise pas en temps réel le réseau (pas de monitoring actif) → compléter avec **Zabbix**
-- ❌ GLPI ne détecte pas automatiquement les intrusions → compléter avec un **IDS/IPS**
-- ❌ L'agent GLPI nécessite une connectivité réseau entre les VLANs → nécessite des **ACLs permissives** vers le serveur GLPI
+-  GLPI ne supervise pas en temps réel le réseau (pas de monitoring actif) → compléter avec **Zabbix**
+-  GLPI ne détecte pas automatiquement les intrusions → compléter avec un **IDS/IPS**
+-  L'agent GLPI nécessite une connectivité réseau entre les VLANs → nécessite des **ACLs permissives** vers le serveur GLPI
 
 ---
 
-## 🚨 Incidents potentiels
+##  Incidents potentiels
 
 ### Incidents réseau
 
@@ -186,7 +186,7 @@ Tout changement de configuration réseau (ajout d'un VLAN, modification d'ACL) p
 
 ---
 
-## 🔓 Vulnérabilités et problèmes sous-jacents
+##  Vulnérabilités et problèmes sous-jacents
 
 ### V1 — VLAN Natif non sécurisé
 
@@ -240,7 +240,7 @@ Attaquant [VLAN 1] ──double tag 802.1Q──▶ trafic rebondit vers VLAN ci
 
 ---
 
-## ✅ Corrections et bonnes pratiques
+##  Corrections et bonnes pratiques
 
 ### Correction V1 — Sécuriser le VLAN natif
 
@@ -298,7 +298,7 @@ interface range FastEthernet0/1-9
  spanning-tree bpduguard enable
 ```
 
-> 💡 Pour une sécurité maximale, implémenter **802.1X** avec un serveur **RADIUS** (ex: FreeRADIUS) pour l'authentification des équipements.
+>  Pour une sécurité maximale, implémenter **802.1X** avec un serveur **RADIUS** (ex: FreeRADIUS) pour l'authentification des équipements.
 
 ### Correction V6 — Redondance avec HSRP
 
@@ -344,7 +344,7 @@ interface GigabitEthernet0/0.30
 
 ---
 
-## 🌍 Normes internationales appliquées
+##  Normes internationales appliquées
 
 ### ISO/IEC 27001 — Sécurité de l'information
 
@@ -387,7 +387,7 @@ interface GigabitEthernet0/0.30
 
 ---
 
-## 📚 Ressources et outils utilisés
+##  Ressources et outils utilisés
 
 - **Cisco Packet Tracer** — Simulation de la topologie réseau
 - **GLPI** — Gestion du parc et helpdesk (ITSM)
@@ -396,7 +396,7 @@ interface GigabitEthernet0/0.30
 
 ---
 
-## 👤 Auteur
+##  Auteur
 
 TIAKRAY MANGLE Jean Marc Riad 
 Formation : Gestion du Parc Informatique et Incident  
