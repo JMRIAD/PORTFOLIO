@@ -17,7 +17,7 @@
 
 ---
 
-## 🗺 Présentation de la topologie
+##  Présentation de la topologie
 
 ### Schéma général
 
