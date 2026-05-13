@@ -37,7 +37,6 @@
         (Direction)     (Informatique)  (Utilisateurs)
 ```
 
-> 💡 *Ajouter ici une capture d'écran de la topologie Packet Tracer*
 
 ### Plan d'adressage IP
 
